@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    background-color: black;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 4em;
+}
+
+#buttons {
+    padding-top: 2em;
+    
+    
+}
+
+button {
+    
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(4, 91, 97);
+}
+
+#showMyHoroscope {
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: #ffffff4b;
+}
