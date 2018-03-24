@@ -1,14 +1,14 @@
-body{
-    margin: 0px;
-    background-color: black;
-    background-image: url(img/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+/* body{
+    margin: 0px; */
+    /* background-color: black; */
+    /* background-image: url(img/background.jpg); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+} */
 
-h1{
+/* h1{
     color: white;
     font-size: 4em;
 }
@@ -32,4 +32,5 @@ button {
     height: 400px;
     width: 400px;
     background-color: #ffffff4b;
-}
+    color: green;
+}  */
