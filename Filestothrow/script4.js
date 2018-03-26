@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $("#showMyHoroscope").html("");
+    // $("#showMyHoroscope").html("");
 
     function viewHoroscope() {
         $.ajax({
-          url: "./php/viewHoroscope.php",
+          url: "viewHoroscope4.php",
           method: "GET",
           data : {
             personNumber: $("#personNumber").val()
@@ -14,18 +14,18 @@ $(document).ready(function(){
       });
     }
 
-    viewHoroscope();
+    // viewHoroscope();
    
     addHoroscope = function(){
         $.ajax({
-            url:"./php/addHoroscope.php",
+            url:"addHoroscope4.php",
             method: "POST",
             data:{
                 personNumber: $("#personNumber").val()
             },
             success: function(msg){
                $("#showMyHoroscope").html(msg);
-            },
+            }
         });
         viewHoroscope();
     }

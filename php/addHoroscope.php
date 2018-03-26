@@ -4,15 +4,20 @@
     include 'checkHoroscope.php';
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $date = substr($_POST["personNumber"] == 6);
+        $date = substr($_POST['personNumber'], 0, 6);
         $lastDate = $date[2] . $date[3] . $date[4] . $date[5];
+        
 
             if(!isset($_SESSION['horoscope'])){
                 $_SESSION['horoscope'] = getHoroscope($horoScope, $date, $lastDate);
+                
                 echo $_SESSION['horoscope'];
+                echo true;
+                
              
             } else {
-                echo "This is So Wrong";
+               echo false;
+                
             }   
     }
 

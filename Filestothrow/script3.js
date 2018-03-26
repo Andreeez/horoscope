@@ -1,12 +1,10 @@
 $(document).ready(function(){
-    $("#showMyHoroscope").html("");
-
     function viewHoroscope() {
         $.ajax({
-          url: "./php/viewHoroscope.php",
+          url: "inc/viewHoroscope3.php",
           method: "GET",
           data : {
-            personNumber: $("#personNumber").val()
+            personNummer: $("#personNumber").val()
           },
           success: function(msg) {
               $("#showMyHoroscope").html(msg);
@@ -18,17 +16,16 @@ $(document).ready(function(){
    
     addHoroscope = function(){
         $.ajax({
-            url:"./php/addHoroscope.php",
+            url:"inc/addHoroscope3.php",
             method: "POST",
             data:{
-                personNumber: $("#personNumber").val()
+                personNummer: $("#personNumber").val()
             },
             success: function(msg){
                $("#showMyHoroscope").html(msg);
-            },
+            }
         });
         viewHoroscope();
     }
-
-
-});
+  
+}); 
