@@ -29,8 +29,15 @@ button {
 
 #showMyHoroscope {
     margin: auto;
+    padding-top: 1px;
+    font-size: 20px;
     height: 400px;
     width: 400px;
     background-color: #ffffff4b;
     color: white;
+}
+
+#horoScopePicture {
+    height: 350px;
+    width: 350px;
 }

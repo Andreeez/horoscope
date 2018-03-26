@@ -1,4 +1,5 @@
 <?php 
+//Functions for updating horoscope
 parse_str(file_get_contents("php://input"), $_PUT);
 session_start();
 include 'checkHoroscope.php';
@@ -10,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'PUT'){
         session_unset();
         echo $_SESSION['horoscope'] = getHoroscope($horoScope, $date, $lastDate);
     }else{
-        echo "Skriv in ditt personnummer";
+        echo "Ehmm, you forgot to write something ?! Try again!";
     } 
 }
 ?>

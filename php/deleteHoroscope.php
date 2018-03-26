@@ -1,4 +1,5 @@
 <?php
+//Delete functions
     session_start();
     include 'checkHoroscope.php';
 

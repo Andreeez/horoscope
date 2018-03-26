@@ -1,4 +1,5 @@
 <?php
+//Functions for search for correct horoscope, to send in "checkHoroscope.php" foreach loop.
     session_start();
 
     include 'checkHoroscope.php';
@@ -16,7 +17,8 @@
                 
              
             } else {
-               echo false;
+                echo "Ehmm, you forgot to write something ?! Try again!";
+                echo false;
                 
             }   
     }

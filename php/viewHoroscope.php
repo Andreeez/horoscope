@@ -1,4 +1,5 @@
 <?php
+//Functions for show horoscope
     session_start();
     include 'checkHoroscope.php';
     
