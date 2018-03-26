@@ -1,18 +1,26 @@
 $(document).ready(function(){
     $("#showMyHoroscope").html("");
 
-    function viewHoroscope() {
+    function viewHoroscope(){
         $.ajax({
           url: "./php/viewHoroscope.php",
           method: "GET",
           data : {
             personNumber: $("#personNumber").val()
           },
-          success: function(msg) {
-              $("#showMyHoroscope").html(msg);
+          
+          success: function(msg){
+            $("#showMyHoroscope").html(msg);
+        
           },
+        
       });
     }
+    
+
+     
+    
+
 
     viewHoroscope();
    
@@ -26,6 +34,32 @@ $(document).ready(function(){
             success: function(msg){
                $("#showMyHoroscope").html(msg);
             },
+        });
+        viewHoroscope();
+    }
+
+    updateHoroscope = function(){
+        $.ajax({
+            url:"./php/updateHoroscope.php",
+            method: "PUT",
+            data:{
+                personNumber: $("#personNumber").val()
+            },
+            success: function(msg){
+                $("#showMyHoroscope").html(msg);
+             },
+        });
+        viewHoroscope();
+    }
+
+    deleteHoroscope = function(){
+        $.ajax({
+            url:"./php/deleteHoroscope.php",
+            method: "DELETE",
+
+            success: function(msg){
+                $("#showMyHoroscope").html(msg);
+             },
         });
         viewHoroscope();
     }

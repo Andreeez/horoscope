@@ -38,7 +38,7 @@
         'title' => 'Cancer',
         'dateStart' => '0621',
         'dateEnd' => '0722',
-        'image' => '<img src="img/kräftan.PNG"/>',
+        'image' => '<img src="img/cancer.PNG"/>',
     ];
 
     $horoScope [] = [
@@ -56,10 +56,10 @@
     ];
 
     $horoScope [] = [
-        'title' => 'Virgo',
+        'title' => 'Libra',
         'dateStart' => '0923',
         'dateEnd' => '1022',
-        'image' => '<img src="img/vågen.PNG"/>',
+        'image' => '<img src="img/libra.PNG"/>',
     ];
 
     
