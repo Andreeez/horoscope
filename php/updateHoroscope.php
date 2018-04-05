@@ -9,9 +9,10 @@ if($_SERVER['REQUEST_METHOD'] == 'PUT'){
 
     if(isset($_SESSION['horoscope'])){
         session_unset();
-        echo $_SESSION['horoscope'] = getHoroscope($horoScope, $date, $lastDate);
+        $_SESSION['horoscope'] = getHoroscope($horoScope, $date, $lastDate);
+        echo true;
     }else{
-        echo "Ehmm, you forgot to write something ?! Try again!";
+        echo false;
     } 
 }
 ?>

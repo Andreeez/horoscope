@@ -21,7 +21,8 @@ $(document).ready(function(){
                 $("#updateHoroscope").hide();
                 $("#deleteHoroscope").hide();
             }
-        
+           
+
           },
         
       });
@@ -37,10 +38,11 @@ $(document).ready(function(){
                 personNumber: $("#personNumber").val()
             },
             success: function(horoScopeInformation){
-               $("#showMyHoroscope").html(horoScopeInformation);
+
+                viewHoroscope();
+
             },
         });
-        viewHoroscope();
     }
     
 //Function for updating the horoscope
@@ -52,10 +54,11 @@ $(document).ready(function(){
                 personNumber: $("#personNumber").val()
             },
             success: function(horoScopeInformation){
-                $("#showMyHoroscope").html(horoScopeInformation);
+
+                viewHoroscope();
+
              },
         });
-        viewHoroscope();
     }
 //Function for deleting the horoscope.
     deleteHoroscope = function(){
@@ -64,10 +67,11 @@ $(document).ready(function(){
             method: "DELETE",
 
             success: function(horoScopeInformation){
-                $("#showMyHoroscope").html(horoScopeInformation);
+
+                viewHoroscope();
+
              },
         });
-        viewHoroscope();
     }
 
 

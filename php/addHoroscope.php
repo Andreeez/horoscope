@@ -12,12 +12,9 @@
             if(!isset($_SESSION['horoscope'])){
                 $_SESSION['horoscope'] = getHoroscope($horoScope, $date, $lastDate);
                 
-                echo $_SESSION['horoscope'];
                 echo true;
                 
-             
             } else {
-                echo "Ehmm, you forgot to write something ?! Try again!";
                 echo false;
                 
             }   
